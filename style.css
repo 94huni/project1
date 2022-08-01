@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), 
+                url();
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+nav{
+    width: 100%;
+    height: 80px;
+    background: white;
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    font-family: sans-serif;
+    font-size: 3.5rem;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #e74c3c;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.menu a:first-child{
+    color: #e74c3c;
+}
+
+.menu a:hover{
+    color: #e74c3c;
+    transition: 0.4s;
+}
+
+.icon i{ 
+    font-size: 2rem;
+}
+
+.icon i:hover{
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+.icon a{
+    text-decoration: none;
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+} 
+
+.h-text{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#camera{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.h-text h1{
+    font-family: sans-serif;
+    font-size: 4rem;
+    
+}
+
+.h-text input{
+    width: 60%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+
+.h-text button{
+    width: 30%;
+    padding: 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.h-text button:hover{
+    cursor: pointer;
+}
+
+.board{
+    position: absolute;
+    transform: translateY(50%);
+    max-width: 700px;
+    top: 10%;
+    left: 5%;
+    color: white;
+    margin: 0 auto;
+}
+
+.board h1{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.contents{
+    margin-top: 20px;
+    font-size: 2rem;
+    border: 2px solid white;
+}
+
+.board .contents table{
+    border-radius: 5px;
+    width: 1400px;
+    position: absolute;
+    transform: translate(0%, 50%);
+}
+
+.board button{
+    background: #e74c3c;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    position: absolute;
+    transform: translate(-50%, 1300%);
+}
+
+.board button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.board button:hover{
+    cursor: pointer;
+}
+
+.contents table tr td{
+    text-align: center;
+    width: 300px;
+}
+
+.contents table tr td:nth-child(2){
+    width: 900px;
+    text-align: center;
+}
+
+.contents table tr td a{
+    text-decoration: none;
+    color: white;
+}
+
+.contents table tr td a:hover{
+    color: #e74c3c;
+}
+
+.login{
+    position: absolute;
+    transform: translateY(50%);
+    max-width: 700px;
+    top: 15%;
+    left: 40%;
+    color: white;
+    margin: 0 auto; 
+}
+
+.logo-login{
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.logo-login a{
+    color: #e74c3c;
+}
+.logo-login a span{
+    color: wheat;
+}
+
+
+#id, #passward{
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid blanchedalmond;
+    margin-top: 5px;
+}
+
+.login button{
+    background: #e74c3c;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 1px;
+    border-radius: 5px;
+    color: aliceblue;
+    margin-top: 5px;
+    width: 300px;
+}
+
+.login button a{
+    text-decoration: none;
+    color: white;
+}
+
+.login button:hover{
+    cursor: pointer;
+
+}
+
+.write{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    text-align: center;
+}
+
+.write h1{
+    color: white;
+    font-size: 5rem;   
+}
+
+.write input{
+    border-radius: 5px;
+}
+.write #title{
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.write #write-contents{
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.write button{
+    color: white;
+    background: #e74c3c;
+    text-decoration: none;
+    border: none;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.write button a{
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    background: #e74c3c;
+    text-align: center;
+    margin-left: -50px;
+    border-radius: 8px;
+    font-size: 10px;
+    
+}
+
+.write button:hover{
+    cursor: pointer;
+}
+
+.filter-gallery{
+    padding: 100px;
+}
+
+.portfolio-menu{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.portfolio-menu li:hover{
+    color: white;
+    background: #e74c3c;
+    border-radius: 8px;
+}
+
+li.active{
+    color: white;
+    background: #e74c3c;
+    border-radius: 8px;
+}
+
+.portfolio-item{
+    width: 100%;
+}
+
+.portfolio-item .item{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+}
+
+.portfolio-item .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* .portfolio-item{
+    width: 100%;
+}
+
+.portfolio-item .item{
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.portfolio-item .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+} */
+@media(max-width:1280px){
+    .logo{
+        font-size: 3rem;
+    }
+    .menu a{
+        font-size: 1.8rem;
+    }
+    .h-text h1{
+        font-size: 3em;
+    }
+    .h-text input{
+        width: 50%;
+        font-size: 1.8rem;
+        
+    }
+    .h-text button{
+        font-size: 1.8rem;
+        width: 20%;  
+    }
+    /* .board h1{
+        font-weight: bold;
+        font-size: 2rem;
+        margin-right: 200px;
+    } */
+    .board .contents table{
+        border-radius: 5px;
+        width: 600px;
+        position: absolute;
+        transform: translate(0%, 50%);
+    }
+    .login{
+        top: 15%;
+        left: 25%;
+    }
+    .write{
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        text-align: center;
+    }
+    .write #title{
+        width: 200px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    
+    .write #write-contents{
+        width: 200px;
+        height: 300px;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:1024px){
+    .portfolio-item .item img{
+        width: 90%;
+        height: 90%;
+        
+    }
+    .logo{
+        font-size: 2.5rem;
+    }
+    
+    .h-text h1{
+        font-size: 2.5em;
+    }
+    .h-text input{
+        width: 50%;
+        font-size: 1.6rem;
+        
+    }
+    .h-text button{
+        font-size: 1.6rem;
+        width: 20%;
+        
+        
+    }
+}
+
+@media(max-width:800px){
+    .logo{
+        font-size: 2rem;
+    }
+    .menu a{
+        font-size: 1.3rem;
+    }
+    .h-text h1{
+        font-size: 2rem;
+    }
+    .h-text input{
+        width: 50%;
+        font-size: 1.3rem;
+        
+    }
+    .h-text button{
+        font-size: 1.3rem;
+        width: 20%;
+    }
+}
+
+@media(max-width:600px){
+    .logo{
+        font-size: 2rem;
+    }
+    .menu a{
+        font-size: 1.3rem;
+    }
+    .h-text h1{
+        font-size: 1.5rem;
+    }
+    .h-text input{
+        width: 35%;       
+    }
+    .h-text button{
+        width: 15%;
+    }
+}
+
+@media(max-width:500px){
+    .logo{
+        font-size: 1.7rem;
+    }
+    .menu a{
+        font-size: 1rem;
+    }
+    .h-text input{
+        width: 30%;       
+    }
+    .h-text button{
+        width: 10%;
+    }
+}
